@@ -165,9 +165,25 @@ footer {
   position: relative; text-align: center; 
 }
 .footer-a {
-  position: relative; display: inline-block; opacity: 0; font-weight: normal; font-size: 1.8em; line-height: 3; color: #333;
-}
-.footer-a:after {
+  position: relative; 
+  display: inline-block; 
+  opacity: 0; 
+  font-weight: normal; 
+  font-size: 1.8em; 
+  line-height: 3; 
+  padding: 0px 10px;
+  color: #333;
+  border: 2px solid #332424;
+  transition: all .3s ease-in-out;
+  }
+
+    .footer-a:hover{
+      background-color:#332424;
+     
+      color:#fff;
+
+    }
+/* .footer-a:after {
   content: '';
   position: absolute;
   left: 50%;
@@ -181,7 +197,7 @@ footer {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 
-}
+} */
 .footer-a:hover:after { 
 	-webkit-transform: scaleX(0); transform: scaleX(0);
 }
